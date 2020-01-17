@@ -66,6 +66,29 @@ p {
     line-height: 1.4;
 }
 
+/* My code for the nav bar starts here */
+nav{
+    display: flex;
+    width: 800px;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+/* My code for the nav bar ends here */
+
+/* My code for the image header starts here */
+.img-header{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+/* My code for the image header ends here */
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -111,6 +134,48 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+/* My code for styling the boxes starts here */
+.middle-content .boxes .box1{
+    background: teal;
+}
+
+.middle-content .boxes .box2{
+    background: gold;
+}
+
+.middle-content .boxes .box3{
+    background: cadetblue;
+}
+
+.middle-content .boxes .box4{
+    background: coral;
+}
+
+.middle-content .boxes .box5{
+    background: crimson;
+}
+
+.middle-content .boxes .box6{
+    background: forestgreen;
+}
+
+.middle-content .boxes .box7{
+    background: darkorchid;
+}
+
+.middle-content .boxes .box8{
+    background: hotpink;
+}
+
+.middle-content .boxes .box9{
+    background: indigo;
+}
+
+.middle-content .boxes .box10{
+    background: dodgerblue;
+}
+/* My code for styling the boxes ends here */
 
 .bottom-content {
     display: flex;
