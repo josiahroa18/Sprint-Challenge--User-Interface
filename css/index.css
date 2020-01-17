@@ -232,6 +232,8 @@ footer nav a {
     width: 100%;
     border-bottom: 1px dashed black;
     padding-bottom: 20px;
+    /* Part of CSS Animation Stretch Goal */
+    transition: all .2s ease-in-out;
 }
 
 .content-container button{
@@ -240,6 +242,16 @@ footer nav a {
     border: 1px solid black;
     border-radius: 5px;
 }
+
+/* STRETCH GOAL: Introduce CSS Animations */
+.content-container:hover{
+    transform: scale(1.1);
+}
+.content-container button:hover{
+    color: white;
+    background-color: black;
+}
+/* End of Stretch Goal */
 
 .content-container h2{
     padding-top: 10px;
@@ -258,12 +270,18 @@ section .info-container{
         align-items: center;
         width: 50%;
     }
+    nav a{
+        padding-top: 10px;
+    }
     .img-header{
         display: none;
     }
     div.container.about-page{
         margin: 0 auto;
         width: 50%;
+    }
+    .about-container{
+        padding-top: 20px;
     }
     .info-container{
         display: flex;
@@ -286,6 +304,7 @@ section .info-container{
         display: flex;
         flex-direction: column;
         width: 100%;
+        margin-bottom: 30px;
     }
     section{
         width: 100%;
@@ -298,12 +317,7 @@ section .info-container{
 
 @media only screen and (max-width: 700px){
     div.container.about-page{
-        width: 80%;
+        width: 60%;
     }
 }
 
-@media only screen and (max-width: 600px){
-    div.container.about-page{
-        width: 90%;
-    }
-}
