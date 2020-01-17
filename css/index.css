@@ -176,6 +176,16 @@ nav a{
     background: dodgerblue;
 }
 /* My code for styling the boxes ends here */
+button{
+    padding: 7px 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button:hover{
+    color: white;
+    background-color: black;
+}
 
 .bottom-content {
     display: flex;
@@ -238,20 +248,13 @@ footer nav a {
 
 .content-container button{
     margin-top: 10px;
-    padding: 7px 15px;
-    border: 1px solid black;
-    border-radius: 5px;
 }
 
 /* STRETCH GOAL: Introduce CSS Animations */
 .content-container:hover{
     transform: scale(1.1);
 }
-.content-container button:hover{
-    color: white;
-    background-color: black;
-}
-/* End of Stretch Goal */
+/* End of Animation Stretch Goal */
 
 .content-container h2{
     padding-top: 10px;
@@ -320,4 +323,21 @@ section .info-container{
         width: 60%;
     }
 }
+/* End of Media Query Stretch Goal */
 
+/* My code for the contact page*/
+form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+form button{
+    margin: 10px;
+}
