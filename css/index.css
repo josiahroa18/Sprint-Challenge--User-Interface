@@ -240,3 +240,8 @@ footer nav a {
     border: 1px solid black;
     border-radius: 5px;
 }
+
+.content-container h2{
+    padding-top: 10px;
+}
+/* My code for the about.html page ends here */
