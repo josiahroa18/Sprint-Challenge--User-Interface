@@ -66,6 +66,29 @@ p {
     line-height: 1.4;
 }
 
+/* My code for the nav bar starts here */
+nav{
+    display: flex;
+    width: 800px;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+/* My code for the nav bar ends here */
+
+/* My code for the image header starts here */
+.img-header{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+/* My code for the image header ends here */
+
 .container {
     width: 800px;
     margin: 0 auto;
@@ -112,6 +135,58 @@ p {
     justify-content: center;
 }
 
+/* My code for styling the boxes starts here */
+.middle-content .boxes .box1{
+    background: teal;
+}
+
+.middle-content .boxes .box2{
+    background: gold;
+}
+
+.middle-content .boxes .box3{
+    background: cadetblue;
+}
+
+.middle-content .boxes .box4{
+    background: coral;
+}
+
+.middle-content .boxes .box5{
+    background: crimson;
+}
+
+.middle-content .boxes .box6{
+    background: forestgreen;
+}
+
+.middle-content .boxes .box7{
+    background: darkorchid;
+}
+
+.middle-content .boxes .box8{
+    background: hotpink;
+}
+
+.middle-content .boxes .box9{
+    background: indigo;
+}
+
+.middle-content .boxes .box10{
+    background: dodgerblue;
+}
+/* My code for styling the boxes ends here */
+button{
+    padding: 7px 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button:hover{
+    color: white;
+    background-color: black;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +218,126 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* My code for the about.html page starts here */
+.info-container{
+    padding: 2.5%;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px dashed black;
+}
+
+.horizontal{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.content-container{
+    margin: 2.5%;
+    width: 100%;
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+    /* Part of CSS Animation Stretch Goal */
+    transition: all .2s ease-in-out;
+}
+
+.content-container button{
+    margin-top: 10px;
+}
+
+/* STRETCH GOAL: Introduce CSS Animations */
+.content-container:hover{
+    transform: scale(1.1);
+}
+/* End of Animation Stretch Goal */
+
+.content-container h2{
+    padding-top: 10px;
+}
+
+section .info-container{
+    width: 800px;
+    margin: 0 auto;
+}
+/* My code for the about.html page ends here */
+
+/* STRETCH GOAL: Add responsive breakpoints to your code by using media queries */
+@media only screen and (max-width: 830px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+    nav a{
+        padding-top: 10px;
+    }
+    .img-header{
+        display: none;
+    }
+    div.container.about-page{
+        margin: 0 auto;
+        width: 50%;
+    }
+    .about-container{
+        padding-top: 20px;
+    }
+    .info-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-container p{
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .horizontal{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    section{
+        width: 100%;
+    }
+    section .info-container{
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    div.container.about-page{
+        width: 60%;
+    }
+}
+/* End of Media Query Stretch Goal */
+
+/* My code for the contact page*/
+form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+form button{
+    margin: 10px;
 }
